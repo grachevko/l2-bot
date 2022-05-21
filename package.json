@@ -1,0 +1,19 @@
+{
+    "scripts": {
+        "start": "ts-node src/",
+        "compile": "tsc",
+        "clean": "rm -rf dist",
+        "lint": "eslint ./src/**"
+    },
+    "dependencies": {
+        "l2js-client": "file:../l2js-client",
+        "ts-node": "^10.7.0"
+    },
+    "devDependencies": {
+        "@types/node": "^16.11.10",
+        "@typescript-eslint/eslint-plugin": "^5.4.0",
+        "@typescript-eslint/parser": "^5.4.0",
+        "eslint": "^8.3.0",
+        "typescript": "^4.6.4"
+    }
+}

@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  node:
+    build:
+      context: .
+      target: node
+    volumes:
+      - ../:/data
+    working_dir: /data/bot
+    user: ${UID:-1000}:${GID:-1000}
